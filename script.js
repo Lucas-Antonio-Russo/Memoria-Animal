@@ -211,6 +211,7 @@ function verificaPar(carta){
             div_bloqueio.appendChild(msg_txt);
             div_bloqueio.appendChild(pt_txt);
             div_bloqueio.appendChild(btn_rst);
+            document.body.classList.add('no-scroll');
             stopTimer();
         },1000);
       
@@ -228,6 +229,7 @@ function verificaPar(carta){
             div_bloqueio.appendChild(msg_txt);
             div_bloqueio.appendChild(pt_txt);
             div_bloqueio.appendChild(btn_rst);
+            document.body.classList.add('no-scroll');
             stopTimer();
         }
     }

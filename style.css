@@ -153,6 +153,10 @@ select{
   font-weight: bold;
   font-size: 1rem;
 }
+body.no-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 1200px) {
   #status {
     width: 50%;
