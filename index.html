@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memória Animal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/icon" href="img/icon.ico">
+</head>
+<body>
+    <div id="status" style="display: none;">
+        <div>Pontos: <span id="qtd_pontos" class="span_Qtd"></span></div>
+        <div>Tempo: <span id="timer" class="span_Qtd">00:00</span></div>
+        <div>Vidas: <span id="qtd_vidas" class="span_Qtd"></span></div>
+    </div>
+    <div id="container" style="display: none;" class="container"></div>
+    <div id="menu-game">
+        <h1> Memória Animal 🦈</h1>
+        <div id="info_game">
+            <div class="item_menu">
+                <p>Número de cartas: </p>
+                <select id="select_num_qtd">
+                    <option value="4">4</option>
+                    <option value="8" selected>8</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                </select>
+            </div>
+            <div  class="item_menu">
+            <p>Nível: </p>
+            <select id="select_num_nivel">
+                <option value="facil">Fácil</option>
+                <option value="medio" selected>Médio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+            </div>
+        </div>
+        <button id="jogar" onclick="iniciarJogo();">Jogar</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

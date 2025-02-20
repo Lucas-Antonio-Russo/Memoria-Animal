@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(to left bottom, #ffcfcf, #ffdbcf, #ffe7d5, #fff2df, #fffdec);
+}
+.card {
+  width: 120px;
+  height: 180px;
+  perspective: 1000px;
+  will-change: transform;
+  transition: transform 0.3s ease-in-out;;
+}
+.card.par-feito {
+  width: 120px;
+  height: 180px;
+  perspective: 1000px; /
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: auto; 
+  gap: 1.6rem;
+  justify-items: center;
+  align-items: center; 
+}
+.container_4cartas{
+  grid-template-columns: repeat(2, auto);
+}
+.container_{
+  grid-template-columns: repeat(4, auto);
+}
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s; 
+  transform-style: preserve-3d; 
+  cursor: pointer;
+}
+.img_{
+  width: 100%;
+  height: 100%;
+  background-size:cover;
+  border-radius: 15px;  
+}
+.card.flipped .card-inner {
+  transform: rotateY(180deg); 
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+.card-front.par-feito,
+.card-back.par-feito
+{
+  background-color: green;
+}
+button{
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 1.6rem;
+  font-family: 'Pixelify Sans';
+}
+#bloqueio{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  height: 95%;
+  background-color: aliceblue;
+  z-index: 100;
+  border: 2px dotted black;
+  border-radius: 1.0rem;
+}
+#status{
+  display: flex;
+  font-family: 'Pixelify Sans';
+  font-weight: bold;
+  align-items: center;
+  border: 2px dotted black;
+  width: 30%;
+  padding: 1.0rem;
+  height: 1.6rem;
+  justify-content: space-around;
+  margin-bottom: 1.6rem;
+  border-radius: 1.0rem;
+}
+.span_Qtd{
+  font-family: Segoe UI;
+  font-style: italic;
+}
+#menu-game{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 5rem;
+  border-radius: 1.0rem;
+  font-family: 'Pixelify Sans';
+  font-weight: bold;
+}
+#info_game{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.item_menu{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+select{
+  border: 0px;
+  font-family: Segoe UI;
+  text-align: center;
+  font-weight: bold;
+  width: 4rem;
+  border-radius: 1rem;
+}
+#msg_game{
+  font-family: 'Pixelify Sans';
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+#pt_game{
+  font-family: Segoe UI;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+}
+@media (max-width: 1200px) {
+  #status {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  #bloqueio{
+    width: 85%;
+  }
+}
+
+@media (max-width: 720px) {
+  .card {
+    width: 100px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    width: 80px;
+    height: 130px;
+  }
+  #status {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  #bloqueio{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .card {
+    width: 70px;
+    height: 120px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .card {
+    width: 70px;
+    height: 100px;
+  }
+  #status {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .card {
+    width: 60px;
+    height: 80px;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  .item_menu > p{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 1.35rem;
+  }
+}
