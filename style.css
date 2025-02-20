@@ -83,7 +83,7 @@ button{
   font-family: 'Pixelify Sans';
 }
 #bloqueio{
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
