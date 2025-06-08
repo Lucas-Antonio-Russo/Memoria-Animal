@@ -20,6 +20,6 @@ Sem framework, sem biblioteca, toda a lógica no braço! 💪 <br>
 
 👀 Me conta o que achou! Toda sugestão é bem-vinda — tô buscando minha primeira oportunidade como desenvolvedor front-end 💻
 
-🚀 Curtiu a ideia do game? Jogue ele aqui:
+🚀 Curtiu a ideia do game? Jogue ele aqui: https://memoria-animal.vercel.app/
 
 
